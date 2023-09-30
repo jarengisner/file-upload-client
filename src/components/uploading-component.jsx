@@ -61,6 +61,7 @@ export const UploadComponent = () => {
         alignItems: 'center',
         justifyContent: 'center',
         flexDirection: 'column',
+        marginTop: 20,
       }}
     >
       <h1>Image Upload</h1>
@@ -73,7 +74,9 @@ export const UploadComponent = () => {
             </div>
           )}
         </Dropzone>
-        <button type='submit'>Upload Image</button>
+        <div style={{ marginTop: 20 }}>
+          <button type='submit'>Upload Image</button>
+        </div>
       </form>
       {message && <p>{message}</p>}
       {/* <div>
