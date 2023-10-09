@@ -8,7 +8,7 @@ export const LoadedFiles = () => {
   const [uploads, setUploads] = useState([]);
   const [query, setQuery] = useState('');
 
-  const Url = 'http://3.84.49.24:8080/images';
+  const Url = 'http://3.239.16.85:8080/images';
 
   useEffect(() => {
     fetch(Url, {

@@ -12,7 +12,7 @@ export const UploadComponent = () => {
   const [file, setFile] = useState(null);
   const [message, setMessage] = useState('');
 
-  const Url = 'http://3.84.49.24:8080/images';
+  const Url = 'http://3.239.16.85:8080/images';
 
   //This function is going to handle setting our files state to hold our formdata file that we would like to use
   const handleSubmit = async (event) => {
