@@ -21,7 +21,11 @@ code {
   text-align: center;
   cursor: pointer;
   background-color: #f9f9f9;
-  width: auto;
+  width: 30vw;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .dropzone p {

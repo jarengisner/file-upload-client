@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import { Card, CardImg, CardBody } from 'react-bootstrap';
+import { Card, CardImg, CardBody, Button } from 'react-bootstrap';
 
 import '../index.css';
 
@@ -45,12 +45,12 @@ export const LoadedFiles = () => {
             onChange={(e) => setQuery(e.target.value.toLowerCase())}
             placeholder='Search'
           />
-          <button
+          <Button
             onClick={refreshHandler}
             style={{ width: 80, textAlign: 'center' }}
           >
             Refresh
-          </button>
+          </Button>
         </Row>
         <Row className='justify-content-center' style={{ marginTop: 20 }}>
           {!query

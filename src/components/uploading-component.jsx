@@ -5,6 +5,8 @@ import { useState } from 'react';
 //import for our drop zone for files
 import Dropzone from 'react-dropzone';
 
+import { Button } from 'react-bootstrap';
+
 export const UploadComponent = () => {
   //This state will hold the formdata file that we want to upload
   const [file, setFile] = useState(null);
@@ -64,7 +66,6 @@ export const UploadComponent = () => {
         marginTop: 20,
       }}
     >
-      <h1>Image Upload</h1>
       <form onSubmit={handleSubmit}>
         <Dropzone onDrop={onDrop} accept='image/*'>
           {({ getRootProps, getInputProps }) => (
@@ -75,7 +76,7 @@ export const UploadComponent = () => {
           )}
         </Dropzone>
         <div style={{ marginTop: 20 }}>
-          <button type='submit'>Upload Image</button>
+          <Button type='submit'>Upload Image</Button>
         </div>
       </form>
       {message && <p>{message}</p>}
